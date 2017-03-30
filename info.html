@@ -2,4 +2,11 @@
 layout: default
 ---
 
+<ul>
+	{% for news in site.categories.news limit:1 %}
+		<li><a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a></li>
+		<p>{{news.meta}}</p>
+	{% endfor %}
+</ul>
+
 <h1>This is the info.html</h1>
