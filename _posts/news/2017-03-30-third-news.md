@@ -6,9 +6,8 @@ source: http://www.google.ch
 category: news
 image: picture3.jpg
 name: picture3
+organiser: "Michael Ohff"
 ---
 
 This is the third post of my Jekyll Theme
-<p>
-<img src="{{site.baseurl}}/img/picture3.jpg">
-</p>
+<img src="{{site.baseurl}}/img/picture3.jpg" class="img-respon">

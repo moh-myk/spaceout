@@ -3,16 +3,15 @@ layout: default
 mainheaderClass: mainheader-tutorials
 titleAfter: Welcome to Tutorials
 meta: SPACEOUT your dreams may come true!
+organiser: "Michael Ohff"
 ---
 
-<ul>
-	{% for tutorials in site.categories.tutorials limit:2 %}
-		<img src="{{site.baseurl}}/img/{{tutorials.image}}">
-		<li><a href="{{site.baseurl}}{{tutorials.url}}">{{tutorials.title}}</a></li>
-		<p>{{tutorials.meta}}</p>
-	{% endfor %}
-</ul>
-
-<h1>Hello world!</h1>
-<p>This is the first website with jekyll.</p>
-<p>This is the first website with jekyll.</p>
+<div class="content">
+	<ul class="spaceout-list-posts">
+		{% for tutorials in site.categories.tutorials limit:3 %}
+			<img src="{{site.baseurl}}/img/{{tutorials.image}}" class="img-respon">
+			<li><a href="{{site.baseurl}}{{tutorials.url}}">{{tutorials.title}}</a></li>
+			<p>{{tutorials.meta}}</p>
+		{% endfor %}
+	</ul>
+</div>

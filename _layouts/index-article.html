@@ -1,0 +1,40 @@
+---
+layout: archive
+---
+{% assign organiser = site.data.organisers.[page.organiser] %}
+
+<div class="content">
+		<h1>{{page.title}}</h1>
+		{{content}}
+	 <div class="author-box">
+			{% if organiser.photo %}
+				<img src="{{organiser.photo}}" alt="" class="spaceout-avatar"/>
+			{% endif %}
+			{% if organiser.photo %}
+				<h4 class="spaceout-author-title">About <a href="">{{organiser.name}}</a></h4>
+			{% endif %}
+				<p class="spaceout-description">{{site.description}}</p>
+				<p class="spaceout-desc-link">
+				<span class="spaceout-location">{{organiser.country}}</span><br>
+				<span class="spaceout-website">{{organiser.website}}</span><br>
+				<span class="spaceout-email">{{organiser.email}}</span><br>
+				<span class="spaceout-email">{{organiser.name}}</span><br>
+		</p>
+	</div>
+	<ul class="pager">
+		{% if page.previous.url %}
+		<li class="previous">
+			<a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toogle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous</a>
+		</li>
+		{% endif%}
+		{% if page.next.url %}
+		<li class="next">
+			<a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toogle="tooltip" data-placement="top" title="{{page.next.title}}">Next &rarr;</a>
+		</li>
+		{% endif %}
+	</ul>
+</div> 
+
+<footer>
+	<p>Source: <a href="{{page.source}}" id="spaceout-credits">{{page.source}}</a></p>
+</footer>

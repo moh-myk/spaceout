@@ -2,23 +2,30 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="{{page.meta}}">
+
 	<title>{% if page.title %}{{page.title}}  | {% endif %} SPACEOUT!! {% if page.titleAfter %} {{page.titleAfter}} {% endif %}</title>
+
 	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<meta name="description" content="{{page.meta}}">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="canonical" href="{{ site.url }}{{site.baseurl}}{{ page.url }}" />
 </head>
 <body>
 
 <header class="mainheader {{page.mainheaderClass}}">
-{% include nav.html navclass="nav-space-top" %}
+	{% include nav-top.html navclass="nav-space-top" %}
 </header>
 
 {{content}}
 
 <footer>
-{% include nav.html navclass="nav-space-bottom" %}
-<p>&copy; 2017 by moh-myk</p>
+	{% include nav-bottom.html navclass="nav-space-bottom" %}
+	<p>&copy; 2017 by moh-myk</p>
 </footer>
+
+<script src="{{ "/js/spaceout.js" | prepend: site.baseurl}}" ></script>
 
 </body>
 </html>

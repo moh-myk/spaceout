@@ -1,14 +1,17 @@
 ---
 layout: default
 title: Newspage
+changefreq: weekly
+priority: 1.0
 ---
+<div class="content">
+	<ul class="spaceout-list-posts">
+		{% for news in site.categories.news limit:3 %}
 
-<ul>
-	{% for news in site.categories.news limit:3 %}
-		<img src="{{site.baseurl}}/img/{{news.image}}">
-		<li><a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a></li>
-		<p>{{news.meta}}</p>
-	{% endfor %}
-</ul>
-
-<h1>This is the info.html</h1>
+			<img src="{{site.baseurl}}/img/{{news.image}}" class="img-respon">
+			<li><a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a></li>
+			<p>{{news.meta}}</p>
+			
+		{% endfor %}
+	</ul>
+</div>

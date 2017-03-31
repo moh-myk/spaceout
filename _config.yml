@@ -1,3 +1,19 @@
 baseurl: /spaceout
 exclude: ['README.md']
 permalink: pretty
+
+description: This will be the SpaceoutBlog
+
+# Site settings
+title: Michael Ohff
+#What is the name of the events or talks you would like to host?(Example Brownbags, Talks, Lighting Talks)
+event_label: Events
+
+#These settings might be able to go?
+author: Michael Ohff
+github_username:  myk-moh
+
+
+# https:// over the Blog (use instead http:// >> https:// )
+url: http://sysadmincatblog.github.io
+enforce_ssl: sysadmincatblog.github.io

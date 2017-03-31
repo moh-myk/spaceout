@@ -2,20 +2,21 @@
 layout: archive
 title: Complete Archive
 ---
+<div class="content">
+	<h1>This is the Jekyll Archive</h1>
+	<p>Links below</p>
 
-<h1>This is the Jekyll Archive</h1>
-<p>Links below</p>
+	<ul>
+		{% for tutorials in site.categories.tutorials %}
+			<li><a href="{{site.baseurl}}{{tutorials.url}}">{{tutorials.title}}</a></li>
+			<p>{{tutorials.meta}}</p>
+		{% endfor %}
+	</ul>
 
-<ul>
-	{% for tutorials in site.categories.tutorials %}
-		<li><a href="{{site.baseurl}}{{tutorials.url}}">{{tutorials.title}}</a></li>
-		<p>{{tutorials.meta}}</p>
-	{% endfor %}
-</ul>
-
-<ul>
-	{% for news in site.categories.news %}
-		<li><a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a></li>
-		<p>{{news.meta}}</p>
-	{% endfor %}
-</ul>
+	<ul>
+		{% for news in site.categories.news %}
+			<li><a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a></li>
+			<p>{{news.meta}}</p>
+		{% endfor %}
+	</ul>
+</div>

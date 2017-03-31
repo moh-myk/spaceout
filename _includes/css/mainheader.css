@@ -4,16 +4,18 @@
 .mainheader{
 	background: url("../img/picture7.jpg");
 	background-size: cover;
-	margin:0 auto;
-	padding: 0 auto;
+/*	margin:0 auto;
+	padding: 0 auto; */
 	color:white;
 	height:200px;
-	max-height:300px;
+}
+.mainheader > img {
+	width:100%;
 }
 .mainheader-tutorials{
 	background: url("../img/picture6.jpg");
 	background-size: cover;
-	margin:0 auto;
-	padding: 0 auto;
+	/*margin:0 auto;
+	padding: 0 auto;*/
 	color:green;
 }
