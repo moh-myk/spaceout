@@ -1,3 +1,2 @@
-markdown: redcarpet
 baseurl: /spaceout
 exclude: ['README.md']
