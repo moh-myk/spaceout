@@ -11,9 +11,9 @@ event_label: Events
 
 #These settings might be able to go?
 author: Michael Ohff
-github_username:  myk-moh
+github_username:  moh-myk
 
 
 # https:// over the Blog (use instead http:// >> https:// )
-url: http://sysadmincatblog.github.io
-enforce_ssl: sysadmincatblog.github.io
+url: http://moh-myk.github.io
+enforce_ssl: moh-myk.github.io

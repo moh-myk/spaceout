@@ -33,13 +33,15 @@ nav {
  display: -webkit-inline-box;
 }
 .nav-space-top li a {
-    color: #000000;
-    padding-right: 5px;
+    color: #fff;
+    background-color:#000;
+    padding: 5px;
     text-underline-position: none;
     text-decoration: none;
     font-weight: 800;
 }.nav-space-top li a:hover {
-    color: #666;
+    color: #000;
+    background-color:#fff;
     padding-right: 5px;
     text-underline-position: none;
     text-decoration: none;
