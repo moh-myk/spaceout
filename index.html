@@ -1,13 +1,18 @@
 ---
 layout: default
+mainheaderClass: mainheader-tutorials
+titleAfter: Welcome to Tutorials
+meta: SPACEOUT your dreams may come true!
 ---
 
 <ul>
 	{% for tutorials in site.categories.tutorials limit:2 %}
-		<li><a href="">{{tutorials.title}}</a></li>
+		<img src="{{site.baseurl}}/img/{{tutorials.image}}">
+		<li><a href="{{site.baseurl}}{{tutorials.url}}">{{tutorials.title}}</a></li>
 		<p>{{tutorials.meta}}</p>
 	{% endfor %}
 </ul>
 
 <h1>Hello world!</h1>
+<p>This is the first website with jekyll.</p>
 <p>This is the first website with jekyll.</p>

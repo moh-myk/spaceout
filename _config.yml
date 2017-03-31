@@ -1,2 +1,3 @@
 baseurl: /spaceout
 exclude: ['README.md']
+permalink: pretty

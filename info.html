@@ -1,9 +1,11 @@
 ---
 layout: default
+title: Newspage
 ---
 
 <ul>
-	{% for news in site.categories.news limit:1 %}
+	{% for news in site.categories.news limit:3 %}
+		<img src="{{site.baseurl}}/img/{{news.image}}">
 		<li><a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a></li>
 		<p>{{news.meta}}</p>
 	{% endfor %}

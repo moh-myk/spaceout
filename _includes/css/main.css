@@ -6,15 +6,8 @@ body, html	{
 	margin: 0 auto;
 	padding: 0 auto;
 }
-.space {
-	background-color: pink;
-}
-.nav-space-top {
-	font-size:22px;
-}
-.nav-space-bottom {
-	font-size:12px;
-}
-.nav{
-	
+
+img{
+	max-width:300px;
+	max-height:auto;
 }
